@@ -1,0 +1,47 @@
+
+.maquina {
+    position: relative;
+    overflow: hidden;
+    height: 850px;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.fundo{
+    background: url(/src/imagens/fundo.png) ;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.vidro-transparente {
+    background: url(/src/imagens/vidro-transparente.png) ;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+.vidro-quebrado {
+    background: url(/src/imagens/vidro-quebrado.png) ;
+    background-size: 100% 100%;
+    z-index: 4;
+}
+.luz_esquerda{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+    width: 150px; 
+    background-size: contain;
+    background: url(/src/imagens/luz_esquerda.png);
+    background-size: 100% 100%;
+}
+.luz_direita{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    z-index: 2;
+    width: 150px; 
+    background-size: contain;
+    background: url(/src/imagens/luz_direita.png);
+    background-size: 100% 100%;
+}

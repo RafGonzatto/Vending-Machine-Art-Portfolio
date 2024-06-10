@@ -1,0 +1,29 @@
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    margin: 130px 0px 0px 50px;
+    z-index: 9998;
+}
+
+.pop-up-conteudo {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+}
+
+.pop-up-balao {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    margin: 80px 0px 0px 330px;
+    z-index: 9999;
+}
+

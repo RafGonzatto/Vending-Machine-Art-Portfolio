@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/maquina.css">
+    <link rel="stylesheet" href="src/css/animacoes.css">
+    <link rel="stylesheet" href="src/css/conteudo_maquina.css">
+    <link rel="stylesheet" href="src/css/tela_inicial.css">
+    <link rel="stylesheet" href="src/css/miscelania.css">
+    <link rel="icon" href="src/imagens/favicon.png" type="image/x-icon">
+    <title>Portfolio do Tigre</title>
+<body>
+<div id="popUp" class="pop-up" style="pointer-events: none;">
+    <img class="pop-up-conteudo" src="src/imagens/pop-up.png" alt="Descrição da imagem">
+</div>
+<div id="popUpBalao" class="pop-up-balao" style="pointer-events: none;">
+    <img class="pop-up-conteudo" src="src/imagens/pop-up-balao.png" alt="Descrição da imagem">
+</div>
+<div class="tela_inicial">
+    <div class="layer bloco_imagem"></div>
+    <div class="layer bloco_texto"></div>
+<div class="navbar">
+    <div class="navbar-left"></div>
+    <div class="navbar-center"></div>
+    <div class="navbar-right">
+        <div class="navbar-seta-esquerda" onclick="MaquinaController.trocarGaleria(1)" onmousedown="MaquinaController.trocarImagemSeta(1)" onmouseup="MaquinaController.restaurarImagemSeta(1)"></div>
+        <div class="navbar-seta-direita" onclick="MaquinaController.trocarGaleria(2)" onmousedown="MaquinaController.trocarImagemSeta(2)" onmouseup="MaquinaController.restaurarImagemSeta(2)"></div>
+    </div>
+</div>
+<div class= "maquina">
+    <div class="layer containerDesenho" style="pointer-events: none;">
+        <button id="fecharBtn" class="layer botao-fechar" onclick="MaquinaController.fecharImagem()" style="pointer-events: none;">Fechar</button>
+    </div>    
+    <div class="layer fundo"></div>
+    <div class="layer luz_esquerda"></div>
+    <div class ="layer luz_direita"></div> 
+   <div class="layer container" style="margin-top:-250px;">
+        <div class="linha">
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="1" src="src/imagens/desenho1.png" alt="Imagem 1" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="2" src="src/imagens/desenho2.png" alt="Imagem 2" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="3" src="src/imagens/desenho3.png" alt="Imagem 3" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="4" src="src/imagens/desenho4.png" alt="Imagem 4" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer container" style="margin-top:250px;">
+        <div class="linha">
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="5" src="src/imagens/desenho5.png" alt="Imagem 5" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="6" src="src/imagens/desenho6.png" alt="Imagem 6" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="7" src="src/imagens/desenho7.png" alt="Imagem 7" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+            <div class="coluna">
+                <img class="imagem-galeria" data-id="8" src="src/imagens/desenho8.png" alt="Imagem 8" onclick="MaquinaController.abrirImagem(this)">
+                <div class="decoracao">
+                    <img class="pedra-esquerda" src="src/imagens/pedra_suporte.png" alt="Pedra Esquerda">
+                    <img class= "barra_suporte" src="src/imagens/barra_suporte.png" alt="Barra">
+                    <img class="pedra-direita" src="src/imagens/pedra_suporte.png" alt="Pedra Direita">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer vidro-transparente"style="pointer-events: none;"></div>
+    <div class="layer vidro-quebrado"style="pointer-events: none;"></div>
+</div> 
+
+</div>
+<script type="module">import MaquinaController from './src/maquinaController.js';</script>
+<script type="module">import MiscelaniaController from './src/miscelaniaController.js';</script>
+
+</body>
+</html>

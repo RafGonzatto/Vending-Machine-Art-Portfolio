@@ -1,0 +1,27 @@
+.tela_inicial {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: url('imagens/fundo.png') ;
+}
+
+.bloco_imagem{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    background: url('imagens/luz_direita.png');
+    background-size: contain;
+    background-size: 100% 100%;
+}
+.bloco_texto{
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    right: 0;
+    z-index: 1;
+    background: url('imagens/vidro-transparente.png') ;
+    background-size: contain;
+    background-size: 100% 100%;
+}

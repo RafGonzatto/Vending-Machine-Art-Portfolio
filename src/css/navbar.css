@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-left, .navbar-center, .navbar-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.navbar-left {
+    background: url(/src/imagens/navbar_esquerda.png) no-repeat left center;
+    background-size: contain;
+    width: 180px; 
+    background-size: cover;
+
+}
+.navbar-center {
+    background: url(/src/imagens/navbar_centro.png) repeat-x;
+    background-size: contain;
+    flex-grow: 1; 
+}
+.navbar-right {
+    background: url(/src/imagens/navbar_direita.png) no-repeat right center;
+    background-size: contain;
+    width: 180px; 
+    background-size: cover;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar-seta-esquerda {   
+    top: 50%;
+    background: url(/src/imagens/flecha_esquerda_levantada.png) no-repeat right ;
+    height: 50px; 
+    width: 90px;  
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 3;
+    background-size: contain;
+    align-content: center;
+    position: absolute;
+}
+.navbar-seta-direita {   
+    bottom: 40%;
+    position: absolute;
+    background: url(/src/imagens/flecha_direita_levantada.png) no-repeat right ;
+    height: 50px; 
+    width: 90px;  
+    cursor: pointer;
+    z-index: 3;
+    background-size: contain;
+    pointer-events: auto;
+}
